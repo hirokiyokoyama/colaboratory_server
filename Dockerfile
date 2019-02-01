@@ -1,5 +1,5 @@
 FROM tensorflow/tensorflow:latest-gpu
-LABEL maintainer "hirokiyokoyama <hiroki.yokoyama@okadanet.org>
+LABEL maintainer "hirokiyokoyama <hiroki.yokoyama@okadanet.org>"
 
 RUN pip install jupyter_http_over_ws \
     && jupyter serverextension enable --py jupyter_http_over_ws
