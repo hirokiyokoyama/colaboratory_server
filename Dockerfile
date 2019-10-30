@@ -1,4 +1,5 @@
 FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
+LABEL maintainer "hirokiyokoyama <hiroki.yokoyama@okadanet.org>"
 
 RUN pip install tensorflow_datasets jupyter_http_over_ws \
     && jupyter serverextension enable --py jupyter_http_over_ws
