@@ -1,2 +1,2 @@
-docker build -t colab-local --pull .
+docker build -t colab-local-py3 --pull .
 
