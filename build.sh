@@ -1,2 +1,2 @@
-docker build -t colab-local .
+docker build -t colab-local --pull .
 
