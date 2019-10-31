@@ -7,7 +7,7 @@ RUN apt-get update \
 RUN pip install --upgrade pip
 
 RUN pip install tensorflow_datasets \
-        scipy pillow opencv-python
+        scipy scikit-learn pillow opencv-python
 
 RUN pip install jupyter_http_over_ws \
     && jupyter serverextension enable --py jupyter_http_over_ws
