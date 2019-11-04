@@ -2,7 +2,7 @@ FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
 LABEL maintainer "hirokiyokoyama <hiroki.yokoyama@okadanet.org>"
 
 RUN apt-get update \
-    && apt-get install -y ffmpeg libsm6
+    && apt-get install -y ffmpeg libsm6 wget git
 
 RUN pip install --upgrade pip
 
