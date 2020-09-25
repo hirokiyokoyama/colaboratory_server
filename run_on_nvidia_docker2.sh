@@ -1,2 +1,2 @@
-docker run --runtime=nvidia -it --rm -p 8844:8844 --cap-add SYS_ADMIN --device /dev/fuse \
-  --security-opt apparmor=unconfined -e PASSWORD=$1 colab-local
+docker run --runtime=nvidia -it --rm -p 8890:8890 --cap-add SYS_ADMIN --device /dev/fuse \
+  --security-opt apparmor=unconfined -e PASSWORD=$1 colab-local-py3
