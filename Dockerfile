@@ -16,7 +16,11 @@ RUN pip install --upgrade ipykernel
 
 CMD [ "jupyter", "notebook", \
       "--NotebookApp.allow_origin='https://colab.research.google.com'", \
-      "--port=8844", \
+      "--NotebookApp.token=''", \
+      "--NotebookApp.port=8890", \
+      "--NotebookApp.disable_check_xsrf=True", \
       "--allow-root", \
+      "--ip=0.0.0.0", \
+      "--no-browser", \
       "--NotebookApp.port_retries=0" ]
 
